@@ -1,0 +1,172 @@
+/* Universal Property :-  Apply All */
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header
+{
+    background-image: url(./Images/taj1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav
+{
+    background-color: rgba(0,0,0,0.2);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    text-transform:capitalize
+}
+
+nav .logo
+{
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu
+{
+    width: 30%;
+    display: flex;
+    justify-content:space-between;
+}
+
+nav .menu :hover
+{
+    background-color: #00b894;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+}
+
+nav .menu a
+{
+    color: white;
+    width: 20%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav .menu a:first-child 
+{
+    color: orange;
+    font-weight: bold;
+    font-weight: 900;
+}
+
+main
+{
+    text-align: center;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+section h3
+{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+section h1
+{
+    font-size: 50px;
+    color:orange;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+}
+
+section p
+{
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+section a
+{
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 30px ;
+
+}
+
+
+section .btn1
+{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn1:hover
+{
+    background-color: #00b894;
+    color: whitesmoke;
+}
+
+section .btn2
+{
+    background-color: #00b894 ;
+    color: white;
+}
+
+.btn2:hover
+{
+    background-color: #000;
+    color: white000099;
+}
+
+
+/* Animation Part :- */
+.changecontent::after
+{
+    content: '';
+    animation: changetxt 10s infinite;
+    color: brown;
+}
+
+@keyframes changetxt 
+{
+
+    0% {content: 'Mumbai';}
+    20% {content: 'Delhi';}
+    40% {content: 'Agra';}
+    55% {content: 'Kerala';}
+    70% {content: 'Jaipur';} 
+    90% {content: 'Pune';}
+    100% {content: 'Gujrat';}   
+}
+
+.animate__animatedanimate__heartBeat::after {
+    content: '';
+    animation: changelogo 10s infinite;
+}
+
+@keyframes changelogo 
+{
+    0% {content: 'Mera Bharat';}
+    30% {content: 'India Is Best Country';}
+    50%{content: 'Gujrat';}
+    80%{content: 'Best Visit Place';}
+    100%{content: 'Thank You';}
+}
